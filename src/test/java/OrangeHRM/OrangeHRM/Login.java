@@ -34,6 +34,13 @@ public class Login {
 		login.clickOnSubmitButton();
 	}
 	
+	@Test
+	public void getTitle() {
+		
+		String title = driver.getTitle();
+		System.out.println(title);
+	}
+	
 	@AfterClass
 	public void closebrowser(){
 		driver.close();
