@@ -3,11 +3,10 @@
 <suite name="Suite">
 <listeners>
 	<listener class-name="Listeners.TestListener"></listener>
-	<listener class-name="Listeners.MyTransformer"></listener>
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="OrangeHRMTests.Login"/>
+      <class name="SeleniumJava.AutoItTool"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
