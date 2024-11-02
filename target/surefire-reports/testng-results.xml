@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-30T13:14:12Z" name="Suite" finished-at="2024-10-30T13:14:26Z" duration-ms="13761">
+  <suite started-at="2024-11-02T10:17:26Z" name="Suite" finished-at="2024-11-02T10:17:35Z" duration-ms="8542">
     <groups>
     </groups>
-    <test started-at="2024-10-30T13:14:12Z" name="Test" finished-at="2024-10-30T13:14:26Z" duration-ms="13761">
-      <class name="OrangeHRM.OrangeHRM.Login">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:OrangeHRM.OrangeHRM.Login@5149d738]" started-at="2024-10-30T13:14:12Z" name="openBrowser" finished-at="2024-10-30T13:14:21Z" duration-ms="9019" status="PASS">
+    <test started-at="2024-11-02T10:17:26Z" name="Test" finished-at="2024-11-02T10:17:35Z" duration-ms="8542">
+      <class name="OrangeHRMTests.Login">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:OrangeHRMTests.Login@3c7c886c]" started-at="2024-11-02T10:17:26Z" name="LaunchApplication" finished-at="2024-11-02T10:17:29Z" duration-ms="2969" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="getTitle()[pri:0, instance:OrangeHRM.OrangeHRM.Login@5149d738]" started-at="2024-10-30T13:14:21Z" name="getTitle" finished-at="2024-10-30T13:14:21Z" duration-ms="18" status="PASS">
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="verifyLoginBtnIsDisplayed()[pri:1, instance:OrangeHRMTests.Login@3c7c886c]" started-at="2024-11-02T10:17:29Z" name="verifyLoginBtnIsDisplayed" finished-at="2024-11-02T10:17:33Z" duration-ms="3786" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTitle -->
-        <test-method signature="loginToHomePage()[pri:0, instance:OrangeHRM.OrangeHRM.Login@5149d738]" started-at="2024-10-30T13:14:21Z" name="loginToHomePage" finished-at="2024-10-30T13:14:26Z" duration-ms="4565" status="PASS">
+        </test-method> <!-- verifyLoginBtnIsDisplayed -->
+        <test-method signature="verifyRegisterBtnIsDisplayed()[pri:2, instance:OrangeHRMTests.Login@3c7c886c]" started-at="2024-11-02T10:17:33Z" name="verifyRegisterBtnIsDisplayed" finished-at="2024-11-02T10:17:33Z" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToHomePage -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:OrangeHRM.OrangeHRM.Login@5149d738]" started-at="2024-10-30T13:14:26Z" name="closebrowser" finished-at="2024-10-30T13:14:26Z" duration-ms="147" status="PASS">
+        </test-method> <!-- verifyRegisterBtnIsDisplayed -->
+        <test-method signature="verifyUserAbleToLoginWithValidCred()[pri:3, instance:OrangeHRMTests.Login@3c7c886c]" started-at="2024-11-02T10:17:33Z" name="verifyUserAbleToLoginWithValidCred" finished-at="2024-11-02T10:17:34Z" duration-ms="757" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closebrowser -->
-      </class> <!-- OrangeHRM.OrangeHRM.Login -->
+        </test-method> <!-- verifyUserAbleToLoginWithValidCred -->
+        <test-method signature="verifyUserUnableToLoginWithInvalidEmail()[pri:4, instance:OrangeHRMTests.Login@3c7c886c]" started-at="2024-11-02T10:17:34Z" name="verifyUserUnableToLoginWithInvalidEmail" finished-at="2024-11-02T10:17:34Z" duration-ms="513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserUnableToLoginWithInvalidEmail -->
+        <test-method signature="verifyUserUnableToLoginWithInvalidPassword()[pri:5, instance:OrangeHRMTests.Login@3c7c886c]" started-at="2024-11-02T10:17:34Z" name="verifyUserUnableToLoginWithInvalidPassword" finished-at="2024-11-02T10:17:34Z" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserUnableToLoginWithInvalidPassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:OrangeHRMTests.Login@3c7c886c]" started-at="2024-11-02T10:17:34Z" name="closeBrowser" finished-at="2024-11-02T10:17:35Z" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- OrangeHRMTests.Login -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

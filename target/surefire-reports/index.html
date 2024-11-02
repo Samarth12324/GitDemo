@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="OrangeHRM.OrangeHRM.Login" class="method navigator-link" hash-for-method="getTitle">getTitle</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="OrangeHRMTests.Login" class="method navigator-link" hash-for-method="verifyLoginBtnIsDisplayed">verifyLoginBtnIsDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="OrangeHRM.OrangeHRM.Login" class="method navigator-link" hash-for-method="loginToHomePage">loginToHomePage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="OrangeHRMTests.Login" class="method navigator-link" hash-for-method="verifyRegisterBtnIsDisplayed">verifyRegisterBtnIsDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="OrangeHRMTests.Login" class="method navigator-link" hash-for-method="verifyUserAbleToLoginWithValidCred">verifyUserAbleToLoginWithValidCred</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="OrangeHRMTests.Login" class="method navigator-link" hash-for-method="verifyUserUnableToLoginWithInvalidEmail">verifyUserUnableToLoginWithInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="OrangeHRMTests.Login" class="method navigator-link" hash-for-method="verifyUserUnableToLoginWithInvalidPassword">verifyUserUnableToLoginWithInvalidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,21 +140,42 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">OrangeHRM.OrangeHRM.Login</span>
+              <span class="class-name">OrangeHRMTests.Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getTitle">
-                  </a> <!-- getTitle -->
-                  <span class="method-name">getTitle</span>
+                  <a name="verifyLoginBtnIsDisplayed">
+                  </a> <!-- verifyLoginBtnIsDisplayed -->
+                  <span class="method-name">verifyLoginBtnIsDisplayed</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginToHomePage">
-                  </a> <!-- loginToHomePage -->
-                  <span class="method-name">loginToHomePage</span>
+                  <a name="verifyRegisterBtnIsDisplayed">
+                  </a> <!-- verifyRegisterBtnIsDisplayed -->
+                  <span class="method-name">verifyRegisterBtnIsDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserAbleToLoginWithValidCred">
+                  </a> <!-- verifyUserAbleToLoginWithValidCred -->
+                  <span class="method-name">verifyUserAbleToLoginWithValidCred</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserUnableToLoginWithInvalidEmail">
+                  </a> <!-- verifyUserUnableToLoginWithInvalidEmail -->
+                  <span class="method-name">verifyUserUnableToLoginWithInvalidEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserUnableToLoginWithInvalidPassword">
+                  </a> <!-- verifyUserUnableToLoginWithInvalidPassword -->
+                  <span class="method-name">verifyUserUnableToLoginWithInvalidPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -154,9 +190,13 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Listeners.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;Listeners.MyTransformer&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;OrangeHRM.OrangeHRM.Login&quot;/&gt;
+      &lt;class name=&quot;OrangeHRMTests.Login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -196,20 +236,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginToHomePage')
-data.setCell(0, 2, 'OrangeHRM.OrangeHRM.Login')
-data.setCell(0, 3, 4565);
+data.setCell(0, 1, 'verifyLoginBtnIsDisplayed')
+data.setCell(0, 2, 'OrangeHRMTests.Login')
+data.setCell(0, 3, 3786);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getTitle')
-data.setCell(1, 2, 'OrangeHRM.OrangeHRM.Login')
-data.setCell(1, 3, 18);
+data.setCell(1, 1, 'verifyUserAbleToLoginWithValidCred')
+data.setCell(1, 2, 'OrangeHRMTests.Login')
+data.setCell(1, 3, 757);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyUserUnableToLoginWithInvalidEmail')
+data.setCell(2, 2, 'OrangeHRMTests.Login')
+data.setCell(2, 3, 513);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyUserUnableToLoginWithInvalidPassword')
+data.setCell(3, 2, 'OrangeHRMTests.Login')
+data.setCell(3, 3, 283);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyRegisterBtnIsDisplayed')
+data.setCell(4, 2, 'OrangeHRMTests.Login')
+data.setCell(4, 3, 78);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -235,22 +287,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">OrangeHRM.OrangeHRM.Login</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">OrangeHRMTests.Login</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">openBrowser</span>
+                <span class="method-name">LaunchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">getTitle</span>
-                <span class="method-start">9023 ms</span>
+                <span class="method-name">verifyLoginBtnIsDisplayed</span>
+                <span class="method-start">2993 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">loginToHomePage</span>
-                <span class="method-start">9041 ms</span>
+                <span class="method-name">verifyRegisterBtnIsDisplayed</span>
+                <span class="method-start">6788 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUserAbleToLoginWithValidCred</span>
+                <span class="method-start">6867 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUserUnableToLoginWithInvalidEmail</span>
+                <span class="method-start">7628 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUserUnableToLoginWithInvalidPassword</span>
+                <span class="method-start">8144 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">closebrowser</span>
-                <span class="method-start">13607 ms</span>
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">8428 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
